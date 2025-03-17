@@ -23,6 +23,15 @@ public class Main {
             System.out.println(obj);
         }
 
+//        List<Seller> list =  sellerDao.findAll();
+//        for(Seller obj : list){
+//            System.out.println(obj);
+//        }
+
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, department);
+        sellerDao.insert(newSeller);
+        System.out.println(newSeller.getId());
+
 
     }
 }
